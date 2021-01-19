@@ -11,6 +11,7 @@ body{
 
 
 header{
+	z-index: 90;
 	top: 0;
 	position: sticky;
 	width: 100%;
@@ -59,6 +60,89 @@ header{
 	font-family: Arial;
 	font-size: 35px;
 }
+
+
+
+
+
+
+
+
+
+#slides{
+  position: relative;
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+  list-style-type: none;
+}
+
+.slide{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  z-index: 1;
+
+  -webkit-transition: opacity 1s;
+  -moz-transition: opacity 1s;
+  -o-transition: opacity 1s;
+  transition: opacity 1s;
+}
+
+.showing{
+  opacity: 1;
+  z-index: 2;
+}
+
+
+
+/*
+non-essential styles:
+just for appearance; change whatever you want
+*/
+
+.slide{
+	display: flex;
+     justify-content: center;
+     align-items: center;
+     padding: 40px;
+  box-sizing: border-box;
+  background: #333;
+  color: #fff;
+
+  background-size: cover;
+}
+
+/* http://unrestrictedstock.com/wp-content/uploads/snowy-winter-vignette-bokeh-night-snow-falling-free-stock-photo.jpg */
+.slide:nth-of-type(1){
+  background-image: url('https://avatars.mds.yandex.net/get-pdb/245485/920665f0-2568-4038-bdfd-5d32186fd8a5/s1200?webp=false');
+}
+
+/* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
+.slide:nth-of-type(2){
+  background-image: url('https://mykaleidoscope.ru/uploads/posts/2020-02/1582051027_1-p-krasivie-intereri-kvartir-7.jpg');
+}
+
+/* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
+.slide:nth-of-type(3){
+  background-image: url('https://img3.goodfon.ru/original/6000x3360/f/a4/interer-stil-dizayn-dom-6229.jpg');
+}
+
+.slide_text{
+	font-size: 40px;
+
+}
+
+
+
+
+
+
+
+
 
 .wrapper{
 	display: flex;
