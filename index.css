@@ -69,7 +69,8 @@ header{
 
 
 
-#slides{
+#slides,
+.slide_ul{
   position: relative;
   height: 100%;
   padding: 0px;
@@ -123,7 +124,7 @@ just for appearance; change whatever you want
 
 /* http://www.dawghousedesignstudio.com/wp-content/uploads/2010/01/25/free-stock-photos-1.jpg */
 .slide:nth-of-type(2){
-  background-image: url('https://mykaleidoscope.ru/uploads/posts/2020-02/1582051027_1-p-krasivie-intereri-kvartir-7.jpg');
+  background-image: url('https://avatars.mds.yandex.net/get-zen_doc/1947084/pub_5ee721884fc2e5340aec7c91_5eeb12f7e0d57b0e43ff3b24/scale_1200');
 }
 
 /* http://www.stockfreeimages.com/static/homepage/waterfall-free-stock-photo-244915.jpg */
